@@ -1,16 +1,20 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "jsx": "react",
-    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "rootDirs": ["src", "test"],
+    "declaration": true,
     "esModuleInterop": true,
-    "sourceMap": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "target": "es5",
+    "importHelpers": true,
+    "allowJs": true,
     "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "declaration": false
+    "declarationDir": "lib",
+    "outDir": "lib",
+    "lib": ["dom", "es6"]
   },
   "include": ["hooks"]
 }
