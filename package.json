@@ -1,0 +1,35 @@
+{
+  "name": "5e-hooks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "5elint": "5elint",
+    "build": "tsc -p .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.38",
+    "react": "^16.13.1",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^3.3.0",
+    "@types/jest": "^26.0.0",
+    "eslint": "^7.3.1",
+    "eslint-config-5e": "^0.0.7",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^26.1.1"
+  },
+  "jest": {
+    "preset": "ts-jest/presets/js-with-ts",
+    "clearMocks": true,
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    }
+  }
+}
