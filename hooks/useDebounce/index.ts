@@ -26,9 +26,10 @@ const useDebounce = <T extends any[]>(fn: (...args: T) => void, options: Options
     if (isImmediate) {
       const isCallNow = !timer.current
       timer.current = setTimeout(() => {
-        timer.current = 0
+        timer.current = null
       }, delayTime)
       if (isCallNow) fnRef.current(...args)
+      return
     }
     timer.current = setTimeout(() => {
       fnRef.current(...args)

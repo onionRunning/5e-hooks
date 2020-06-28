@@ -2,7 +2,7 @@
   "compilerOptions": {
     "skipLibCheck": true,
     "strict": true,
-    "rootDirs": ["src", "test"],
+    "rootDirs": [".", "test"],
     "declaration": true,
     "esModuleInterop": true,
     "moduleResolution": "node",

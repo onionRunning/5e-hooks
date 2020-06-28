@@ -6,6 +6,7 @@
   "scripts": {
     "5elint": "5elint",
     "build": "tsc -p .",
+    "watch-demo": "start-storybook",
     "test": "jest"
   },
   "dependencies": {
@@ -14,14 +15,19 @@
     "typescript": "^3.9.5"
   },
   "devDependencies": {
+    "@storybook/addon-info": "^5.3.19",
+    "@storybook/react": "^5.3.19",
     "@testing-library/react-hooks": "^3.3.0",
     "@types/jest": "^26.0.0",
     "eslint": "^7.3.1",
     "eslint-config-5e": "^0.0.7",
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-dom": "^16.13.1",
     "react-test-renderer": "^16.13.1",
-    "ts-jest": "^26.1.1"
+    "ts-jest": "^26.1.1",
+    "ts-loader": "^7.0.5"
   },
   "jest": {
     "preset": "ts-jest/presets/js-with-ts",
