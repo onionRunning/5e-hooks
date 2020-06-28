@@ -51,21 +51,12 @@ const changeValue = (e: any) => {
 
 #### useThrottle
 
+```
+const [run] = useThrottle(fn, {delayTime: 1000})
+```
+
 #### useLocalStorage
 
 #### useSessionStorage
 
 
-### 公共常用函数库
-
-
-#### isNumber
-
-#### isString
-
-#### isObject
-
-#### formatTime 格式化时间
-
-
-导出使用的时候按需加载
