@@ -7,7 +7,7 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "jsx": "react",
-    "target": "es5",
+    "target": "es6",
     "importHelpers": true,
     "allowJs": true,
     "baseUrl": ".",
