@@ -13,7 +13,24 @@ const resetState = () => {
 }
 
 useResetAction(resetState)
+
+// ---> WillUnmount
 ```
+
+#### useMount
+
+```js
+// 初始化逻辑
+const initParams = () => {
+  //xxxx
+}
+
+useMount(initParams) // 首次进入页面的时候执行一次, 无副作用, 内部禁止掉了
+
+ps. 隔离副作用 hook ---> didMount
+
+```
+
 
 #### useToggle
 
@@ -59,4 +76,7 @@ const [run] = useThrottle(fn, {delayTime: 1000})
 
 #### useSessionStorage
 
-
+```js
+const [value, saveValue] = useSessionStorage('jb')
+...
+```
