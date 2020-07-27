@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "5elint": "5elint",
-    "build": "tsc -p .",
+    "build": "rm -rf lib && tsc -p .",
     "watch-demo": "start-storybook",
     "test": "jest"
   },

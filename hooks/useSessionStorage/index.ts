@@ -23,7 +23,7 @@ const useSessionStorage = (key: string) => {
     },
     [key]
   )
-
+  console.error(value, 'valie')
   return [value, save]
 }
 
