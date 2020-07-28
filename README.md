@@ -72,11 +72,14 @@ const changeValue = (e: any) => {
 const [run] = useThrottle(fn, {delayTime: 1000})
 ```
 
-#### useLocalStorage
-
 #### useSessionStorage
 
 ```js
 const [value, saveValue] = useSessionStorage('jb')
 ...
 ```
+
+
+#### useOnresize 
+
+#### useLocalStorage

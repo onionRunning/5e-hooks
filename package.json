@@ -2,6 +2,7 @@
   "name": "5e-hooks",
   "version": "1.0.0",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "license": "MIT",
   "scripts": {
     "5elint": "5elint",
