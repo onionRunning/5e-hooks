@@ -16,6 +16,5 @@
     "outDir": "lib",
     "lib": ["dom", "es6"]
   },
-  "include": ["hooks"],
-  "exclude": ["hooks/**/test", "hooks/**/demo"]
+  "include": ["hooks"]
 }

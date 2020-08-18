@@ -3,3 +3,5 @@ hooks
 demo
 test
 .storybook
+lib/**/demo
+lib/**/test

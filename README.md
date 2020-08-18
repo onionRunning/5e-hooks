@@ -31,9 +31,6 @@ ps. 隔离副作用 hook ---> didMount
 
 ```
 
-
-#### useToggle
-
 #### useDebounce
 
 ***指定函数内触发***
@@ -82,8 +79,26 @@ const [value, saveValue] = useSessionStorage('jb')
 
 #### useOnresize 
 
+```js
+const width = useOnResize(time)
+
+time: 内部集成了防抖逻辑, 是延迟输出的时间
+
+```
+
 #### useLocalStorage
 
 
+```js
+const [value, saveValue] = useLocalStorage('jb')
+...
+```
 
-[githubdi地址](https://github.com/onionRunning/5e-hooks)
+---
+
+### TODO
+
+#### useToggle
+
+
+[github的地址](https://github.com/onionRunning/5e-hooks)

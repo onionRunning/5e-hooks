@@ -1,12 +1,12 @@
 import {useState, useCallback} from 'react'
 
-const useSessionStorage = (key: string) => {
+const useLocalStorage = (key: string) => {
   const getStorageValue = () => {
     try {
-      const storageValue = sessionStorage.getItem(key) as string
+      const storageValue = localStorage.getItem(key) as string
       return storageValue ? JSON.parse(storageValue) : ''
     } catch (err) {
-      console.warn(`useSessionStorage 无法获取${key}: `, err)
+      console.warn(`useLocalStorage 无法获取${key}: `, err)
     }
     return ''
   }
@@ -17,7 +17,7 @@ const useSessionStorage = (key: string) => {
   const save = useCallback(
     (v: any) => {
       setValue(() => {
-        sessionStorage.setItem(key, JSON.stringify(v))
+        localStorage.setItem(key, JSON.stringify(v))
         return v
       })
     },
@@ -26,4 +26,4 @@ const useSessionStorage = (key: string) => {
   return [value, save]
 }
 
-export default useSessionStorage
+export default useLocalStorage
