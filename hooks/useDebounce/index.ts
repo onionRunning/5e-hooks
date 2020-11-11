@@ -16,6 +16,7 @@ const useDebounce = <T extends any[]>(fn: (...args: T) => void, options: Options
   const fnRef = useRef(fn)
 
   const cancel = () => {
+    console.warn('cancel', timer)
     if (timer.current) {
       clearTimeout(timer.current)
     }
@@ -31,7 +32,9 @@ const useDebounce = <T extends any[]>(fn: (...args: T) => void, options: Options
       if (isCallNow) fnRef.current(...args)
       return
     }
+    console.warn('current', timer)
     timer.current = setTimeout(() => {
+      console.warn('run', timer)
       fnRef.current(...args)
     }, delayTime)
   }
